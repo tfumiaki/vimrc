@@ -1,0 +1,37 @@
+""""""""""""""""""""""""""""""
+"スクリプトのエンコード指定
+"""""""""""""""""""""""""""""
+scriptencoding utf-8
+
+""""""""""""""""""""""""""""""
+"一般設定
+""""""""""""""""""""""""""""""
+set guifont=MS_Gothic:h10
+set columns=230
+set lines=60
+
+set autoindent
+
+set clipboard=unnamed
+
+set expandtab
+set tabstop=2
+set shiftwidth=4
+
+set number
+
+set cursorline
+
+"""""""""""""""""""""""""""""""
+"カラースキーマ指定
+""""""""""""""""""""""""""""""
+syntax enable
+set background=light
+colorscheme solarized
+
+"""""""""""""""""""""""""""""""
+"エンコードをステータスバーに表示
+"""""""""""""""""""""""""""""""
+"set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
+
+
