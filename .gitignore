@@ -1,0 +1,9 @@
+## .gitignore ##
+# ignore all
+*
+*/
+
+# allow any
+!_vimrc
+!_gvimrc
+!.gitignore
