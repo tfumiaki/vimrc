@@ -6,4 +6,5 @@
 # allow any
 !_vimrc
 !_gvimrc
+!_ideavimrc
 !.gitignore
