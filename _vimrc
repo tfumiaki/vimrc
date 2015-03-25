@@ -60,6 +60,21 @@ let g:nayn_modoki_animation_enabled= 1
 """"""""""""""""""""""""""""""""
 let g:neocomplete#enable_at_startup = 1
 
+""""""""""""""""""""""""""""""
+"一般設定
+""""""""""""""""""""""""""""""
+set autoindent
+
+set clipboard=unnamed
+
+set expandtab
+set tabstop=2
+set shiftwidth=4
+
+set number
+
+set cursorline
+
 """"""""""""""""""""""""""""""""
 "全角空白に色を付ける
 """"""""""""""""""""""""""""""""

@@ -15,18 +15,6 @@ set guifont=MS_Gothic:h10
 set columns=230
 set lines=60
 
-set autoindent
-
-set clipboard=unnamed
-
-set expandtab
-set tabstop=2
-set shiftwidth=4
-
-set number
-
-set cursorline
-
 """""""""""""""""""""""""""""""
 "カラースキーマ指定
 """"""""""""""""""""""""""""""
