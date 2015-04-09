@@ -30,7 +30,9 @@ NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'drillbits/nyan-modoki.vim'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'cohama/vim-insert-linenr'
 
+"プラグイン導入後の後処理
 NeoBundleCheck
 
 filetype plugin indent on
