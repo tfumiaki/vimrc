@@ -89,4 +89,5 @@ augroup END
 "キーマップ設定
 """""""""""""""""""""""""""""""""
 nmap U <C-r>
-
+noremap <C-j> <Esc>
+noremap! <C-j> <Esc>
