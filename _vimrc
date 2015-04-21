@@ -91,5 +91,18 @@ augroup END
 "キーマップ設定
 """""""""""""""""""""""""""""""""
 nmap U <C-r>
-noremap <C-j> <Esc>
 noremap! <C-j> <Esc>
+noremap <C-Tab> <C-o>      "前カーソル位置への移動
+
+
+"""""""""""""""""""""""""""""""""
+"undo履歴クリア関数
+""""""""""""""""""""""""""""""""
+command -nargs=0 ClearUndo call <sid>ClearUndo()
+function! s:ClearUndo()
+  let old_undolevels = &undolevels
+  set undolevels=-1
+  exe "normal a \<BS>\<Esc>"
+  let &undolevels = old_undolevels
+  unlet old_undolevels
+endfunction
