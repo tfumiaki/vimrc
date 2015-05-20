@@ -31,7 +31,7 @@ NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'drillbits/nyan-modoki.vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'cohama/vim-insert-linenr'
-
+NeoBundle 'Align'
 "プラグイン導入後の後処理
 NeoBundleCheck
 
@@ -104,6 +104,11 @@ nnoremap <Up>   gk
 nnoremap gj j
 nnoremap gk k
 
+" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
+vmap <Enter> <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
 """""""""""""""""""""""""""""""""
 "undo履歴クリア関数
 """"""""""""""""""""""""""""""""
@@ -115,3 +120,8 @@ function! s:ClearUndo()
   let &undolevels = old_undolevels
   unlet old_undolevels
 endfunction
+
+"""""""""""""""""""""""""""""""""
+"Alignの日本語向け設定
+""""""""""""""""""""""""""""""""
+:let g:Align_xstrlen = 3
