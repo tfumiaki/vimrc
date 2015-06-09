@@ -132,9 +132,10 @@ endfunction
 """"""""""""""""""""""""""""""""
 command -complete=file -nargs=1 GetVimgrepFile call GetVimgrepFile(<f-args>)
 function GetVimgrepFile(filename)
-  set errorformat=%f\|%l\ col\ %c\|\ %m
-  echo a:filename
+  let l:orgErrorformat = &errorformat
+  let &errorformat='%f\|%l\ col\ %c\|\ %m'
   execute 'cgetfile ' . a:filename
   copen
+  let &errorformat=l:orgErrorformat
 endfunction
 
