@@ -130,8 +130,8 @@ endfunction
 """""""""""""""""""""""""""""""""
 "vimgrepのエラーファイルを読み込む設定
 """"""""""""""""""""""""""""""""
-command -complete=file -nargs=1 GetVimgrepFile call GetVimgrepFile(<f-args>)
-function GetVimgrepFile(filename)
+command -complete=file -nargs=1 GetQuickfixFile call GetQuickfixFile(<f-args>)
+function GetQuickfixFile(filename)
   let l:orgErrorformat = &errorformat
   let &errorformat='%f\|%l\ col\ %c\|\ %m'
   execute 'cgetfile ' . a:filename
