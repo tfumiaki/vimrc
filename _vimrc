@@ -71,7 +71,8 @@ set clipboard=unnamed
 
 set expandtab
 set tabstop=2
-set shiftwidth=4
+set shiftwidth=2
+set softtabstop=0
 
 set number
 
@@ -125,3 +126,15 @@ endfunction
 "Alignの日本語向け設定
 """"""""""""""""""""""""""""""""
 :let g:Align_xstrlen = 3
+
+"""""""""""""""""""""""""""""""""
+"vimgrepのエラーファイルを読み込む設定
+""""""""""""""""""""""""""""""""
+command -complete=file -nargs=1 GetVimgrepFile call GetVimgrepFile(<f-args>)
+function GetVimgrepFile(filename)
+  set errorformat=%f\|%l\ col\ %c\|\ %m
+  echo a:filename
+  execute 'cgetfile ' . a:filename
+  copen
+endfunction
+
