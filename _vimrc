@@ -78,6 +78,8 @@ set number
 
 set cursorline
 
+" デフォルトvimrc_exampleのtextwidth設定上書き
+autocmd FileType text setlocal textwidth=0
 """"""""""""""""""""""""""""""""
 "全角空白に色を付ける
 """"""""""""""""""""""""""""""""
