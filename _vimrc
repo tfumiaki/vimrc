@@ -32,6 +32,7 @@ NeoBundle 'drillbits/nyan-modoki.vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'cohama/vim-insert-linenr'
 NeoBundle 'Align'
+NeoBundle 'PProvost/vim-ps1'
 "プラグイン導入後の後処理
 NeoBundleCheck
 
