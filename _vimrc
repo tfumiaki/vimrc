@@ -16,7 +16,6 @@ endif
 
 call neobundle#begin(expand('$VIM/_vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
-call neobundle#end()
 
 "プラグイン
 NeoBundle 'Shougo/unite.vim'
@@ -28,13 +27,16 @@ NeoBundle 'Shougo/vimfiler'
 NeoBundle 'altercation/vim-colors-solarized'
 "NeoBundle 'scrooloose/nerdtree' 
 NeoBundle 'Townk/vim-autoclose'
-NeoBundle 'drillbits/nyan-modoki.vim'
+"NeoBundle 'drillbits/nyan-modoki.vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'cohama/vim-insert-linenr'
 NeoBundle 'PProvost/vim-ps1'
 NeoBundle 'h1mesuke/vim-alignta.git'
 "プラグイン導入後の後処理
 NeoBundleCheck
+
+call neobundle#end()
+
 
 filetype plugin indent on
 
@@ -53,10 +55,10 @@ set undodir=$VIM/_vimtmp/undo
 "set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 
 "nyan-modokiの設定
-set laststatus=2
-set statusline=%F%m%r%h%w[%{&ff}]%=%{g:NyanModoki()}(%l,%c)[%P]
-let g:nyan_modoki_select_cat_face_number = 4
-let g:nayn_modoki_animation_enabled= 1
+"set laststatus=2
+"set statusline=%F%m%r%h%w[%{&ff}]%=%{g:NyanModoki()}(%l,%c)[%P]
+"let g:nyan_modoki_select_cat_face_number = 4
+"let g:nayn_modoki_animation_enabled= 1
 
 """"""""""""""""""""""""""""""""
 "NeoCompleteの設定
