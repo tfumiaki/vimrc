@@ -31,8 +31,8 @@ NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'drillbits/nyan-modoki.vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'cohama/vim-insert-linenr'
-NeoBundle 'Align'
 NeoBundle 'PProvost/vim-ps1'
+NeoBundle 'h1mesuke/vim-alignta.git'
 "プラグイン導入後の後処理
 NeoBundleCheck
 
@@ -107,11 +107,6 @@ nnoremap <Up>   gk
 " 逆に普通の行単位で移動したい時のために逆の map も設定しておく
 nnoremap gj j
 nnoremap gk k
-
-" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
-vmap <Enter> <Plug>(EasyAlign)
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
 
 """""""""""""""""""""""""""""""""
 "undo履歴クリア関数
