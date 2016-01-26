@@ -43,7 +43,8 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""
 "テンポラリファイルの設定
 """"""""""""""""""""""""""""""""""""
-set backupdir=$VIM/_vimtmp/backup
+"set backupdir=$VIM/_vimtmp/backup
+set nobackup
 set directory=$VIM/_vimtmp/swap
 set undodir=$VIM/_vimtmp/undo
 
@@ -110,6 +111,19 @@ nnoremap <Up>   gk
 nnoremap gj j
 nnoremap gk k
 
+"Ctrl+hjklでカーソル移動
+noremap <C-j> <Down>
+noremap <C-k> <Up>
+noremap <C-h> <Left>
+noremap <C-l> <Right>
+noremap! <C-j> <Down>
+noremap! <C-k> <Up>
+noremap! <C-h> <Left>
+noremap! <C-l> <Right>
+
+"挿入モードでC-rしたときにimeを強制オフ
+"(ノーマルモード移行時にIMEオフになる設定が前提
+inoremap <C-r> <Esc>a<C-r>
 """""""""""""""""""""""""""""""""
 "undo履歴クリア関数
 """"""""""""""""""""""""""""""""
