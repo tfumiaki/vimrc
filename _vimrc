@@ -6,6 +6,9 @@
 """""""""""""""""""""""""""""""""""
 "NeoBundleの設定
 """""""""""""""""""""""""""""""""""
+" ~/neobundle.log にログを出力する
+let g:neobundle#log_filename = $VIM . "/neobundle.log"
+
 set nocompatible
 filetype plugin indent off
 
@@ -43,7 +46,7 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""
 "テンポラリファイルの設定
 """"""""""""""""""""""""""""""""""""
-"set backupdir=$VIM/_vimtmp/backup
+set backupdir=$VIM/_vimtmp/backup
 set nobackup
 set directory=$VIM/_vimtmp/swap
 set undodir=$VIM/_vimtmp/undo
