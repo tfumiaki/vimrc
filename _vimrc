@@ -114,23 +114,22 @@ nnoremap <Up>   gk
 nnoremap gj j
 nnoremap gk k
 
-"Ctrl+hjklでカーソル移動
-noremap <C-j> <Down>
-noremap <C-k> <Up>
-noremap <C-h> <Left>
-noremap <C-l> <Right>
-noremap! <C-j> <Down>
-noremap! <C-k> <Up>
-noremap! <C-h> <Left>
-noremap! <C-l> <Right>
+" "Ctrl+hjklでカーソル移動
+"noremap <C-j> <Down>
+"noremap <C-k> <Up>
+"noremap <C-h> <Left>
+"noremap <C-l> <Right>
+"noremap! <C-j> <Down>
+"noremap! <C-k> <Up>
+"noremap! <C-h> <Left>
+"noremap! <C-l> <Right>
 
-"挿入モードでC-rしたときにimeを強制オフ
-"(ノーマルモード移行時にIMEオフになる設定が前提
-inoremap <C-r> <Esc>a<C-r>
+"無名レジスタのコピペ。IME-ONだと鬱陶しいから設定しました。
+noremap! <C-r><C-v> <C-r><C-o>*
 """""""""""""""""""""""""""""""""
 "undo履歴クリア関数
 """"""""""""""""""""""""""""""""
-command -nargs=0 ClearUndo call <sid>ClearUndo()
+command! -nargs=0 ClearUndo call <sid>ClearUndo()
 function! s:ClearUndo()
   let old_undolevels = &undolevels
   set undolevels=-1
@@ -147,8 +146,8 @@ endfunction
 """""""""""""""""""""""""""""""""
 "vimgrepのエラーファイルを読み込む設定
 """"""""""""""""""""""""""""""""
-command -complete=file -nargs=1 GetQuickfixFile call GetQuickfixFile(<f-args>)
-function GetQuickfixFile(filename)
+command! -complete=file -nargs=1 GetQuickfixFile call GetQuickfixFile(<f-args>)
+function! GetQuickfixFile(filename)
   let l:orgErrorformat = &errorformat
   let &errorformat='%f\|%l\ col\ %c\|\ %m'
   execute 'cfile ' . a:filename
