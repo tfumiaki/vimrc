@@ -35,6 +35,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'cohama/vim-insert-linenr'
 NeoBundle 'PProvost/vim-ps1'
 NeoBundle 'h1mesuke/vim-alignta.git'
+NeoBundle 'jacquesbh/vim-showmarks'
 "プラグイン導入後の後処理
 NeoBundleCheck
 
@@ -155,3 +156,5 @@ function! GetQuickfixFile(filename)
   let &errorformat=l:orgErrorformat
 endfunction
 
+""""""""""""""""""""""""""""""""
+autocmd VimEnter * DoShowMarks!
