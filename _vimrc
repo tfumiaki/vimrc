@@ -36,6 +36,7 @@ NeoBundle 'cohama/vim-insert-linenr'
 NeoBundle 'PProvost/vim-ps1'
 NeoBundle 'h1mesuke/vim-alignta.git'
 NeoBundle 'jacquesbh/vim-showmarks'
+NeoBundle 'Yggdroot/indentLine'
 "プラグイン導入後の後処理
 NeoBundleCheck
 
@@ -157,4 +158,13 @@ function! GetQuickfixFile(filename)
 endfunction
 
 """"""""""""""""""""""""""""""""
+"jacquesbh/vim-showmarksの設定
+""""""""""""""""""""""""""""""""
 autocmd VimEnter * DoShowMarks!
+
+""""""""""""""""""""""""""""""""
+"Yggdroot/indentLineの設定
+""""""""""""""""""""""""""""""""
+let g:indentLine_color_term = 111
+let g:indentLine_color_gui = '#efdfaf'
+
