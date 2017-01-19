@@ -37,6 +37,7 @@ NeoBundle 'PProvost/vim-ps1'
 NeoBundle 'h1mesuke/vim-alignta.git'
 NeoBundle 'jacquesbh/vim-showmarks'
 NeoBundle 'Yggdroot/indentLine'
+NeoBundle 'elzr/vim-json'
 "プラグイン導入後の後処理
 NeoBundleCheck
 
@@ -167,4 +168,6 @@ autocmd VimEnter * DoShowMarks!
 """"""""""""""""""""""""""""""""
 let g:indentLine_color_term = 111
 let g:indentLine_color_gui = '#efdfaf'
-
+"Yggdroot/indentLine内で2に設定されているらしいので、それを0に戻します。
+set conceallevel=0
+let g:vim_json_syntax_conceal=0
