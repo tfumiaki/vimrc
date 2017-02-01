@@ -36,7 +36,7 @@ NeoBundle 'cohama/vim-insert-linenr'
 NeoBundle 'PProvost/vim-ps1'
 NeoBundle 'h1mesuke/vim-alignta.git'
 NeoBundle 'jacquesbh/vim-showmarks'
-NeoBundle 'Yggdroot/indentLine'
+NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'elzr/vim-json'
 "プラグイン導入後の後処理
 NeoBundleCheck
@@ -164,10 +164,9 @@ endfunction
 autocmd BufReadPost * DoShowMarks
 
 """"""""""""""""""""""""""""""""
-"Yggdroot/indentLineの設定
+"nathanaelkane/vim-indent-guides
 """"""""""""""""""""""""""""""""
-let g:indentLine_color_term = 111
-let g:indentLine_color_gui = '#efdfaf'
-"Yggdroot/indentLine内で2に設定されているらしいので、それを0に戻します。
-set conceallevel=0
-let g:vim_json_syntax_conceal=0
+let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_start_level=2
+let indent_guides_guide_size=1
+let g:vim_json_syntax_conceal=0   "これを設定しないとjson編集時にダブルクオート表示が省略されてしまう
