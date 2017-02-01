@@ -161,7 +161,7 @@ endfunction
 """"""""""""""""""""""""""""""""
 "jacquesbh/vim-showmarksの設定
 """"""""""""""""""""""""""""""""
-autocmd VimEnter * DoShowMarks!
+autocmd BufReadPost * DoShowMarks
 
 """"""""""""""""""""""""""""""""
 "Yggdroot/indentLineの設定
