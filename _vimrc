@@ -21,10 +21,10 @@ call neobundle#begin(expand('$VIM/_vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 "プラグイン
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/neosnippet.vim'
-NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'Shougo/neocomplete.vim'
+"NeoBundle 'Shougo/unite.vim'
+"NeoBundle 'Shougo/neosnippet.vim'
+"NeoBundle 'Shougo/neosnippet-snippets'
+"NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/vimfiler'
 "NeoBundle 'Shougo/vimproc'
 NeoBundle 'altercation/vim-colors-solarized'
@@ -70,7 +70,7 @@ set undodir=$VIM/_vimtmp/undo
 """"""""""""""""""""""""""""""""
 "NeoCompleteの設定
 """"""""""""""""""""""""""""""""
-let g:neocomplete#enable_at_startup = 1
+"let g:neocomplete#enable_at_startup = 1
 
 """"""""""""""""""""""""""""""
 "一般設定
