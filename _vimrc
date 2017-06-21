@@ -38,6 +38,9 @@ NeoBundle 'h1mesuke/vim-alignta.git'
 NeoBundle 'jacquesbh/vim-showmarks'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'elzr/vim-json'
+"NeoBundle 'plasticboy/vim-markdown'
+"NeoBundle 'kannokanno/previm'
+"NeoBundle 'tyru/open-browser.vim'
 "プラグイン導入後の後処理
 NeoBundleCheck
 
@@ -100,6 +103,7 @@ augroup highlightZenkakuSpace "全角スペースを赤色にする
   autocmd VimEnter,WinEnter * match ZenkakuSpace /　/
 augroup END
 
+
 """""""""""""""""""""""""""""""""
 "キーマップ設定
 """""""""""""""""""""""""""""""""
@@ -129,6 +133,9 @@ nnoremap gk k
 
 "無名レジスタのコピペ。IME-ONだと鬱陶しいから設定しました。
 noremap! <C-r><C-v> <C-r><C-o>*
+
+"ESC*2で検索のハイライトを消す
+nnoremap <ESC><ESC> :nohlsearch<CR>
 """""""""""""""""""""""""""""""""
 "undo履歴クリア関数
 """"""""""""""""""""""""""""""""
