@@ -35,12 +35,12 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'cohama/vim-insert-linenr'
 NeoBundle 'PProvost/vim-ps1'
 NeoBundle 'h1mesuke/vim-alignta.git'
-NeoBundle 'jacquesbh/vim-showmarks'
+"NeoBundle 'jacquesbh/vim-showmarks'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'elzr/vim-json'
-"NeoBundle 'plasticboy/vim-markdown'
-"NeoBundle 'kannokanno/previm'
-"NeoBundle 'tyru/open-browser.vim'
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'kannokanno/previm'
+NeoBundle 'tyru/open-browser.vim'
 "プラグイン導入後の後処理
 NeoBundleCheck
 
@@ -168,7 +168,7 @@ endfunction
 """"""""""""""""""""""""""""""""
 "jacquesbh/vim-showmarksの設定
 """"""""""""""""""""""""""""""""
-autocmd BufReadPost * DoShowMarks
+"autocmd BufReadPost * DoShowMarks
 
 """"""""""""""""""""""""""""""""
 "nathanaelkane/vim-indent-guides
