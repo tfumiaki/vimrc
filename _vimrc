@@ -25,7 +25,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "NeoBundle 'Shougo/neosnippet.vim'
 "NeoBundle 'Shougo/neosnippet-snippets'
 "NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'Shougo/vimfiler'
+"NeoBundle 'Shougo/vimfiler'
 "NeoBundle 'Shougo/vimproc'
 NeoBundle 'altercation/vim-colors-solarized'
 "NeoBundle 'scrooloose/nerdtree' 
@@ -53,7 +53,6 @@ filetype plugin indent on
 "テンポラリファイルの設定
 """"""""""""""""""""""""""""""""""""
 set backupdir=$VIM/_vimtmp/backup
-set nobackup
 set directory=$VIM/_vimtmp/swap
 set undodir=$VIM/_vimtmp/undo
 
@@ -176,4 +175,4 @@ endfunction
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=2
 let indent_guides_guide_size=1
-let g:vim_json_syntax_conceal=0   "これを設定しないとjson編集時にダブルクオート表示が省略されてしまう
+
